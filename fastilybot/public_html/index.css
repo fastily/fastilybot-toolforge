@@ -1,15 +1,28 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 40px;
+}
 .navbar {
 	margin-bottom: 0;
 	z-index: 9999;
 	border: 0;
 	font-size: 12px !important;
-	line-height: 1.42857143 !important;
+	line-height: 1.43 !important;
 	letter-spacing: 4px;
 	border-radius: 0;
 }
 
 .navbar li a, .navbar .navbar-brand {
 	color: #000000 !important;
+
+	-moz-transition: all 500ms; /* Firefox */
+	-webkit-transition: all 500ms; /* Safari and Chrome */
+	-o-transition: all 500ms; /* Opera */
+	transition: all 500ms;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -36,13 +49,38 @@ body .container h2 {
 	font-family: 'Roboto', sans-serif;
 }
 
+tr {
+	-moz-transition: all 500ms; /* Firefox */
+	-webkit-transition: all 500ms; /* Safari and Chrome */
+	-o-transition: all 500ms; /* Opera */
+	transition: all 500ms;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	background-color: black;
+}
 
 footer p {
 	font-family: 'Roboto', sans-serif;
+	position: fixed; 
+	bottom: 0; 
+	width:100%; 
+	text-align: center;
+	color: white;
 }
 
 footer a {
-	color:black;
+	color:white;
+
+	-moz-transition: all 500ms; /* Firefox */
+	-webkit-transition: all 500ms; /* Safari and Chrome */
+	-o-transition: all 500ms; /* Opera */
+	transition: all 500ms;
 }
 
 footer a:hover {
