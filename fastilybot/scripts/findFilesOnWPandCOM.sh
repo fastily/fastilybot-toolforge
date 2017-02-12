@@ -4,9 +4,9 @@
 #:
 #: Author: Fastily
 
-cd "${0%/*}" &> /dev/null
+# cd "${0%/*}" &> /dev/null
 
-OUTFOLDER="../public_html/reports"
+OUTFOLDER="~/public_html/reports"
 OUTFILE="${OUTFOLDER}/wpDupes.txt"
 
 mkdir -p "$OUTFOLDER"
