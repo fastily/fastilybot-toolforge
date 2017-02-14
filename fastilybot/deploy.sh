@@ -11,7 +11,7 @@ SCRIPTSDIR="scripts"
 
 printf "Doing deploy\n"
 
-cp -Rf "${SCRIPTSDIR}"/* ~/"${SCRIPTSDIR}"/
-cp -Rf "${PUBHTMLDIR}"/* ~/"${PUBHTMLDIR}"/
+cp -Rf "${SCRIPTSDIR}"/* "${HOME}/${SCRIPTSDIR}"/
+cp -Rf "${PUBHTMLDIR}"/* "${HOME}/${PUBHTMLDIR}"/
 
 printf "Done!\n"

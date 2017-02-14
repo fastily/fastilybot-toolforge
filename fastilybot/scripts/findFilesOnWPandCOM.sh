@@ -6,7 +6,7 @@
 
 # cd "${0%/*}" &> /dev/null
 
-OUTFOLDER="~/public_html/reports"
+OUTFOLDER="${HOME}/public_html/reports"
 OUTFILE="${OUTFOLDER}/wpDupes.txt"
 
 mkdir -p "$OUTFOLDER"

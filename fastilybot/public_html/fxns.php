@@ -6,11 +6,9 @@
     {
     	$f = "reports/" . $name . ".txt";
 
-    	if (file_exists($f)) {
+    	if (file_exists($f)) 
     		echo date("H:i, d F Y (T)", filectime("reports/wpDupes.txt")); 
-    	}
-    	else {
+    	else 
     		echo "n/a";
-    	}
     }
 ?>
