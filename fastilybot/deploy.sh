@@ -6,12 +6,18 @@
 #: 		1) public_html and exist in home directory.
 #: Author: Fastily
 
-PUBHTMLDIR="public_html"
-SCRIPTSDIR="scripts"
+publicHtmlDir="public_html"
+scriptsDir="scripts"
+
+rootPublicHtmlDir="${HOME}/${publicHtmlDir}"
+rootScriptsDir="${HOME}/${scriptsDir}"
+
+mkdir -p "${rootPublicHtmlDir}/reports"
+mkdir -p "${rootScriptsDir}"
 
 printf "Doing deploy\n"
 
-cp -Rf "${SCRIPTSDIR}"/* "${HOME}/${SCRIPTSDIR}"/
-cp -Rf "${PUBHTMLDIR}"/* "${HOME}/${PUBHTMLDIR}"/
+cp -Rf "${publicHtmlDir}"/* "${rootPublicHtmlDir}"/
+cp -Rf "${scriptsDir}"/* "${rootScriptsDir}"/
 
 printf "Done!\n"
