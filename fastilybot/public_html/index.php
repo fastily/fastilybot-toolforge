@@ -56,21 +56,21 @@
 			<tbody>
 				<tr>
 					<td><a href="reports/wpDupes.txt">wpDupes</a></td>
-					<td>English Wikipedia files with a duplicate on Commons</td>
+					<td>enwp files with a duplicate on Commons</td>
 					<td>Daily</td>
 					<td><?php resolveDate("wpDupes"); ?></td>
 				</tr>
 				<tr>
 					<td><a href="reports/orphans.txt">orphans</a></td>
-					<td>Orphaned free English Wikipedia files</td>
+					<td>enwp orphaned free files</td>
 					<td>Daily</td>
 					<td><?php resolveDate("orphans"); ?></td>
 				</tr>
 				<tr>
-					<td>Placeholder</td>
-					<td>...</td>
-					<td>Under construction</td>
-					<td>Under construction</td>
+					<td><a href="reports/licConflict.txt">orphans</a></td>
+					<td>enwp files tagged as free and non-free</td>
+					<td>Daily</td>
+					<td><?php resolveDate("licConflict"); ?></td>
 				</tr>
 				<tr>
 					<td>Placeholder</td>
