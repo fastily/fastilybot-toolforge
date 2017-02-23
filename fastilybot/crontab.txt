@@ -1,3 +1,4 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-20 8 * * * jsub -l release=trusty -j y -o ffowp.txt bash scripts/findFilesOnWPandCOM.sh
+20 8 * * * jsub -l release=trusty -quiet -j y -o fFoWp.txt bash scripts/findFilesOnWPandCOM.sh
+20 9 * * * jsub -l release=trusty -quiet -j y -o fuNfu.txt bash scripts/freeAndNonFreeFiles.sh

@@ -67,7 +67,7 @@
 					<td><?php resolveDate("orphans"); ?></td>
 				</tr>
 				<tr>
-					<td><a href="reports/licConflict.txt">orphans</a></td>
+					<td><a href="reports/licConflict.txt">licConflict</a></td>
 					<td>enwp files tagged as free and non-free</td>
 					<td>Daily</td>
 					<td><?php resolveDate("licConflict"); ?></td>
