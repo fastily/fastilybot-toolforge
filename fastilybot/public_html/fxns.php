@@ -7,7 +7,7 @@
     	$f = "reports/" . $name . ".txt";
 
     	if (file_exists($f)) 
-    		echo date("H:i, d F Y (T)", filectime("reports/wpDupes.txt")); 
+    		echo date("H:i, d F Y (T)", filectime($f)); 
     	else 
     		echo "n/a";
     }

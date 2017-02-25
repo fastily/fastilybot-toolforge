@@ -61,12 +61,6 @@
 					<td><?php resolveDate("wpDupes"); ?></td>
 				</tr>
 				<tr>
-					<td><a href="reports/orphans.txt">orphans</a></td>
-					<td>enwp orphaned free files</td>
-					<td>Daily</td>
-					<td><?php resolveDate("orphans"); ?></td>
-				</tr>
-				<tr>
 					<td><a href="reports/licConflict.txt">licConflict</a></td>
 					<td>enwp files tagged as free and non-free</td>
 					<td>Daily</td>
