@@ -57,20 +57,20 @@
 				<tr>
 					<td><a href="reports/wpDupes.txt">wpDupes</a></td>
 					<td>enwp files with a duplicate on Commons</td>
-					<td>Daily</td>
+					<td>Bi-weekly</td>
 					<td><?php resolveDate("wpDupes"); ?></td>
 				</tr>
 				<tr>
 					<td><a href="reports/licConflict.txt">licConflict</a></td>
 					<td>enwp files tagged as free and non-free</td>
-					<td>Daily</td>
+					<td>Bi-weekly</td>
 					<td><?php resolveDate("licConflict"); ?></td>
 				</tr>
 				<tr>
-					<td>Placeholder</td>
-					<td>...</td>
-					<td>Under construction</td>
-					<td>Under construction</td>
+					<td><a href="reports/orphanedFF.txt">orphanedFF</a></td>
+					<td>free files on enwp with no fileusage</td>
+					<td>Weekly</td>
+					<td><?php resolveDate("orphanedFF"); ?></td>
 				</tr>
 			</tbody>
 		</table>
