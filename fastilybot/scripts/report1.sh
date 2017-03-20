@@ -7,4 +7,4 @@
 cd ~/scripts
 source scriptUtils.sh
 
-runMySQLReport findFilesOnWPandCOM wpDupes
+runMySQLReport report1 report1

@@ -7,4 +7,4 @@
 cd ~/scripts
 source scriptUtils.sh
 
-runMySQLReport orphanedFreeFiles orphanedFF
+runMySQLReport report3 report3

@@ -2,13 +2,32 @@
 
 	date_default_timezone_set("UTC");
 	
-    function resolveDate($name)
+    /**
+     * Generates a table row for each database report
+     */
+    function generateRow($id, $name, $updateFreq)
     {
-    	$f = "reports/" . $name . ".txt";
+        echo "<tr>";
 
-    	if (file_exists($f)) 
-    		echo date("H:i, d F Y (T)", filectime($f)); 
-    	else 
-    		echo "n/a";
+        $f = "reports/report" . $id . ".txt";
+
+        echo tdWrap($id);
+        echo tdWrap(sprintf("<a href=\"%s\">%s</a>", $f, $name));
+        echo tdWrap($updateFreq);
+
+        if (file_exists($f)) 
+            echo tdWrap(date("H:i, d F Y (T)", filectime($f)));
+        else 
+            echo tdWrap("n/a");
+
+        echo "</tr>";
+    }
+
+    /**
+     * Wraps a string in td tags.
+     */
+    function tdWrap($s)
+    {
+        return sprintf("<td>%s</td>", $s);
     }
 ?>

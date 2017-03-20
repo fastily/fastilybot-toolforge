@@ -48,30 +48,17 @@
 			<thead>
 				<tr>
 					<th>Report</th>
-					<th>Description</th>
-					<th>Generated</th>
+					<th>Name</th>
+					<th>Frequency</th>
 					<th>Last Updated</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td><a href="reports/wpDupes.txt">wpDupes</a></td>
-					<td>enwp files with a duplicate on Commons</td>
-					<td>Bi-weekly</td>
-					<td><?php resolveDate("wpDupes"); ?></td>
-				</tr>
-				<tr>
-					<td><a href="reports/licConflict.txt">licConflict</a></td>
-					<td>enwp files tagged as free and non-free</td>
-					<td>Bi-weekly</td>
-					<td><?php resolveDate("licConflict"); ?></td>
-				</tr>
-				<tr>
-					<td><a href="reports/orphanedFF.txt">orphanedFF</a></td>
-					<td>free files on enwp with no fileusage</td>
-					<td>Weekly</td>
-					<td><?php resolveDate("orphanedFF"); ?></td>
-				</tr>
+				<?php
+					generateRow(1, "enwp files with a duplicate on Commons", "Bi-Weekly"); 
+					generateRow(2, "enwp files tagged as free and non-free", "Bi-Weekly"); 
+					generateRow(3, "free files on enwp with no fileusage", "Weekly");
+				?>
 			</tbody>
 		</table>
 	</div>

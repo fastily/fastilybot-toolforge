@@ -7,4 +7,4 @@
 cd ~/scripts
 source scriptUtils.sh
 
-runMySQLReport freeAndNonFreeFiles licConflict
+runMySQLReport report2 report2
