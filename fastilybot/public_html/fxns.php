@@ -9,7 +9,7 @@
     {
         echo "<tr>";
 
-        $f = "reports/report" . $id . ".txt";
+        $f = "r/report" . $id . ".txt";
 
         echo tdWrap($id);
         echo tdWrap(sprintf("<a href=\"%s\">%s</a>", $f, $name));

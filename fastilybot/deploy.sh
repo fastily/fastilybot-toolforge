@@ -12,7 +12,7 @@ scriptsDir="scripts"
 rootPublicHtmlDir="${HOME}/${publicHtmlDir}"
 rootScriptsDir="${HOME}/${scriptsDir}"
 
-mkdir -p "${rootPublicHtmlDir}/reports"
+mkdir -p "${rootPublicHtmlDir}/r"
 mkdir -p "${rootScriptsDir}"
 
 printf "Doing deploy\n"

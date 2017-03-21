@@ -12,7 +12,7 @@
 ##
 runMySQLReport()
 {
-	reportFile="${HOME}/public_html/reports/${2}.txt"
+	reportFile="${HOME}/public_html/r/${2}.txt"
 
 	mysql --defaults-file="${HOME}/replica.my.cnf" -h enwiki.labsdb enwiki_p -B < "${HOME}/scripts/${1}.sql" > "$reportFile"
 	
