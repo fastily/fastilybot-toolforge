@@ -5,7 +5,7 @@
 #: Author: Fastily
 
 ##
-# Runs a MySQL query against the labs replica database and puts the result in ~/public_html/reports.
+# Runs a MySQL query against the labs replica database and puts the result in ~/public_html/r.
 #	Arguments:
 #		1) The SQL file to run, without the .sql extension
 #		2) The file to output results to, without the .txt extension
