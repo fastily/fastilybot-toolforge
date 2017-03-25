@@ -2,4 +2,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 00 1 * * 1,3,5 jsub -l release=trusty -quiet -j y -o r1.txt bash scripts/report1.sh
 00 12 * * 0,4 jsub -l release=trusty -quiet -j y -o r2.txt bash scripts/report2.sh
-00 18 * * 2 jsub -l release=trusty -quiet -j y -o r3.txt bash scripts/report3.sh
+30 16 * * 0 jsub -l release=trusty -quiet -j y -o r3.txt bash scripts/report3.sh
+00 17 * * 0 jsub -l release=trusty -quiet -j y -o r4.txt bash scripts/report4.sh

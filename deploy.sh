@@ -9,8 +9,8 @@
 publicHtmlDir="public_html"
 scriptsDir="scripts"
 
-rootPublicHtmlDir="${HOME}/${publicHtmlDir}"
-rootScriptsDir="${HOME}/${scriptsDir}"
+rootPublicHtmlDir=~/"${publicHtmlDir}"
+rootScriptsDir=~/"${scriptsDir}"
 
 mkdir -p "${rootPublicHtmlDir}/r"
 mkdir -p "${rootScriptsDir}"
