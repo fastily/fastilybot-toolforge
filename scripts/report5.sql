@@ -2,7 +2,7 @@
  * Finds the top 200 largest files flagged for transfer to Commons
  * Author: Fastily
  */
-SELECT pg.page_title, i.img_size
+SELECT pg.page_title
 FROM templatelinks tl
 INNER JOIN page pg
 ON tl.tl_from=pg.page_id
