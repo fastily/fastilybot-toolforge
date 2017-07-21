@@ -60,6 +60,7 @@
 					generateRow(3, "free files on enwp with no fileusage", "Weekly");
 					generateRow(4, "free files on enwp with links to the mainspace", "Weekly");
 					generateRow(5, "largest files flagged for transfer to Commons", "Weekly");
+					generateRow(6, "list of free files on enwp", "Weekly");
 				?>
 			</tbody>
 		</table>

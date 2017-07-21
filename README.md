@@ -1,8 +1,4 @@
 # fastilybot-toollabs
+[![License: GPL v3](https://upload.wikimedia.org/wikipedia/commons/8/86/GPL_v3_Blue_Badge.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Utilities and database reports used by FastilyBot hosted out of WMF labs.
-
-* [fastilybot](https://tools.wmflabs.org/fastilybot)
-
-### See Also
-* [ctools](https://github.com/fastily/ctools)
+Database reports used by [FastilyBot](https://en.wikipedia.org/wiki/User:FastilyBot) hosted on [WMF labs](https://tools.wmflabs.org/?list).
