@@ -1,98 +1,97 @@
 html {
-	position: relative;
-	min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
+
 body {
-	/* Margin bottom by footer height */
-	margin-bottom: 40px;
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
 }
+
 .navbar {
-	margin-bottom: 0;
-	z-index: 9999;
-	border: 0;
-	font-size: 12px !important;
-	line-height: 1.43 !important;
-	letter-spacing: 4px;
-	border-radius: 0;
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.43 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
 }
 
-.navbar li a, .navbar .navbar-brand {
-	color: #000000 !important;
-
-	-moz-transition: all 500ms; /* Firefox */
-	-webkit-transition: all 500ms; /* Safari and Chrome */
-	-o-transition: all 500ms; /* Opera */
-	transition: all 500ms;
+.navbar li a,.navbar .navbar-brand {
+  color: #000000 !important;
+  -moz-transition: all 500ms;
+  /* Firefox */
+  -webkit-transition: all 500ms;
+  /* Safari and Chrome */
+  -o-transition: all 500ms;
+  /* Opera */
+  transition: all 500ms;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-	color: white !important;
-	background-color: black !important;
+.navbar-nav li a:hover {
+  color: white !important;
+  background-color: black !important;
 }
 
 .navbar-default .navbar-toggle {
-	color: #000000 !important;
+  color: #000000 !important;
 }
 
 .jumbotron {
-	background-color: #000000;
-	padding: 100px 25px;
-	z-index: 10;
+  background-color: #000000;
+  padding: 100px 25px;
+  z-index: 10;
 }
 
 .jumbotron h1 {
-	font-family: 'Open Sans', sans-serif;
-	color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
 }
 
 body .container h2 {
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 tr {
-	-moz-transition: all 500ms; /* Firefox */
-	-webkit-transition: all 500ms; /* Safari and Chrome */
-	-o-transition: all 500ms; /* Opera */
-	transition: all 500ms;
+  -moz-transition: all 500ms;
+  /* Firefox */
+  -webkit-transition: all 500ms;
+  /* Safari and Chrome */
+  -o-transition: all 500ms;
+  /* Opera */
+  transition: all 500ms;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	/* Set the fixed height of the footer here */
-	height: 40px;
-	background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: black;
 }
 
 footer p {
-	font-family: 'Roboto', sans-serif;
-	position: fixed; 
-	bottom: 0; 
-	width:100%; 
-	text-align: center;
-	color: white;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 footer a {
-	color:white;
-
-	-moz-transition: all 500ms; /* Firefox */
-	-webkit-transition: all 500ms; /* Safari and Chrome */
-	-o-transition: all 500ms; /* Opera */
-	transition: all 500ms;
+  color: white;
+  -moz-transition: all 500ms;
+  /* Firefox */
+  -webkit-transition: all 500ms;
+  /* Safari and Chrome */
+  -o-transition: all 500ms;
+  /* Opera */
+  transition: all 500ms;
 }
 
 footer a:hover {
-	color:darkgray;
-}
-
-footer .glyphicon {
-	font-size: 20px;
-	margin-bottom: 20px;
-	color: black;
-}
-
-footer .glyphicon:hover {
-	color: darkgray;
+  color: darkgray;
 }
