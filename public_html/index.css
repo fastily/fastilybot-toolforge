@@ -21,11 +21,8 @@ body {
 .navbar li a,.navbar .navbar-brand {
   color: #000000 !important;
   -moz-transition: all 500ms;
-  /* Firefox */
   -webkit-transition: all 500ms;
-  /* Safari and Chrome */
   -o-transition: all 500ms;
-  /* Opera */
   transition: all 500ms;
 }
 
@@ -40,7 +37,6 @@ body {
 
 .jumbotron {
   background-color: #000000;
-  padding: 100px 25px;
   z-index: 10;
 }
 
@@ -55,11 +51,8 @@ body .container h2 {
 
 tr {
   -moz-transition: all 500ms;
-  /* Firefox */
   -webkit-transition: all 500ms;
-  /* Safari and Chrome */
   -o-transition: all 500ms;
-  /* Opera */
   transition: all 500ms;
 }
 
@@ -84,11 +77,8 @@ footer p {
 footer a {
   color: white;
   -moz-transition: all 500ms;
-  /* Firefox */
   -webkit-transition: all 500ms;
-  /* Safari and Chrome */
   -o-transition: all 500ms;
-  /* Opera */
   transition: all 500ms;
 }
 
