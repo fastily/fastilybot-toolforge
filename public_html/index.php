@@ -44,7 +44,10 @@
 					generateRow(3, "free files on enwp with no fileusage", "Weekly");
 					generateRow(4, "free files on enwp with links to the mainspace", "Weekly");
 					generateRow(5, "largest files flagged for transfer to Commons", "Weekly");
-					generateRow(6, "list of free files on enwp", "Weekly");
+					generateRow(6, "all free files on enwp", "Weekly");
+					generateRow(7, "oversized non-free images on enwp", "Weekly");
+					generateRow(8, "all pages in the 'Draft:' namespace on enwp", "Weekly");
+					generateRow(9, "all non-free files on enwp", "Weekly");
 				?>
 			</tbody>
 		</table>
@@ -56,7 +59,7 @@
 		</p>
 	</footer>
 
-	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
