@@ -22,6 +22,9 @@ mkdir -p "${rootScriptsDir}"
 cp -Rf "${publicHtmlDir}"/* "${rootPublicHtmlDir}"/
 cp -Rf "${scriptsDir}"/* "${rootScriptsDir}"/
 
+## Generate logs folder if absent
+mkdir -p ~/logs
+
 ## Copy toollabs description
 printf "Copying description...\n"
 cp -f .description ~/.description

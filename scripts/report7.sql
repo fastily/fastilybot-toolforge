@@ -11,5 +11,5 @@ ON img.img_name=pg.page_title
 WHERE cl.cl_to='All_non-free_media'
 AND pg.page_namespace=6
 AND img.img_media_type='BITMAP'
-AND img.img_width>540
-AND img.img_height>540;
+AND img.img_width>450
+AND img.img_height>450;
