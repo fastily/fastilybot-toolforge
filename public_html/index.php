@@ -43,11 +43,10 @@
 					generateRow(2, "enwp files tagged as free and non-free", "Bi-Weekly"); 
 					generateRow(3, "free files on enwp with no fileusage", "Weekly");
 					generateRow(4, "free files on enwp with links to the mainspace", "Weekly");
-					generateRow(5, "largest files flagged for transfer to Commons", "Weekly");
+					generateRow(5, "all non-free files on enwp", "Weekly");
 					generateRow(6, "all free files on enwp", "Weekly");
 					generateRow(7, "oversized non-free images on enwp", "Weekly");
 					generateRow(8, "all pages in the 'Draft:' namespace on enwp", "Weekly");
-					generateRow(9, "all non-free files on enwp", "Weekly");
 				?>
 			</tbody>
 		</table>
