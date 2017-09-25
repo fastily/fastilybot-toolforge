@@ -47,7 +47,6 @@
 					generateRow(6, "all free files on enwp", "Weekly");
 					generateRow(7, "oversized non-free images on enwp", "Weekly");
 					generateRow(8, "all files on enwp", "Weekly");
-					generateRow(9, "all self-published files on enwp", "Weekly");
 				?>
 			</tbody>
 		</table>

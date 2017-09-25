@@ -8,4 +8,3 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 00 11 * * 0 jsub -l release=trusty -quiet -j y -o logs/r6.txt bash scripts/runReport.sh 6
 15 20 * * 2 jsub -l release=trusty -quiet -j y -o logs/r7.txt bash scripts/runReport.sh 7
 30 17 * * 0 jsub -l release=trusty -quiet -j y -o logs/r7.txt bash scripts/runReport.sh 8
-30 11 * * 0 jsub -l release=trusty -quiet -j y -o logs/r7.txt bash scripts/runReport.sh 9
