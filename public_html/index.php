@@ -54,7 +54,7 @@
 
 	<footer class="container-fluid text-center footer">
 		<p>
-			Powered by <a href="https://tools.wmflabs.org">WMF toolforge</a> &mdash; &copy; 2017, Fastily, <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>
+			Powered by <a href="https://tools.wmflabs.org">WMF toolforge</a> &mdash; &copy; 2017 Fastily &mdash; <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>
 		</p>
 	</footer>
 
