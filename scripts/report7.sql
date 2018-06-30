@@ -1,5 +1,5 @@
 /**
- * Lists all bitmap images in 'Category:All non-free media' on enwp exceeding 540x540.
+ * Lists all bitmap images in 'Category:All non-free media' on enwp exceeding 450x450.
  * Author: Fastily
  */
 SELECT pg.page_title 

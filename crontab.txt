@@ -7,4 +7,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 15 11 * * * jsub -l release=trusty -quiet -j y -o logs/r9.txt bash scripts/runReport.sh 5
 00 11 * * * jsub -l release=trusty -quiet -j y -o logs/r6.txt bash scripts/runReport.sh 6
 15 20 * * 2 jsub -l release=trusty -quiet -j y -o logs/r7.txt bash scripts/runReport.sh 7
-30 17 * * * jsub -l release=trusty -quiet -j y -o logs/r7.txt bash scripts/runReport.sh 8
+30 17 * * * jsub -l release=trusty -quiet -j y -o logs/r8.txt bash scripts/runReport.sh 8
+#45 16 * * 6 jsub -l release=trusty -quiet -j y -o logs/r9.txt bash scripts/runReport.sh 9
+#45 18 * * 6 jsub -l release=trusty -quiet -j y -o logs/r10.txt bash scripts/runReport.sh 10
