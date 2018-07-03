@@ -12,7 +12,7 @@ if [ $# -lt 1 ]; then
 	exit
 fi
 
-cd ~/scripts
+# cd ~/scripts
 
 for i in "$@"; do
 	reportFile=~/"public_html/r/report${i}.txt"
