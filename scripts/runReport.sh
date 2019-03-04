@@ -14,6 +14,6 @@ fi
 
 for i in "$@"; do
 	reportFile=~/"public_html/r/report${i}.txt"
-	mysql -B --defaults-file=~/"replica.my.cnf" -h enwiki.analytics.db.svc.eqiad.wmflabs enwiki_p < ~/"scripts/report${i}.sql" > "$reportFile"
+	mysql --defaults-file=~/"replica.my.cnf" -B -h enwiki.analytics.db.svc.eqiad.wmflabs enwiki_p < ~/"scripts/report${i}.sql" > "$reportFile"
 	sed -i -e '1,3d' "$reportFile" 	# First two lines are junk
 done
