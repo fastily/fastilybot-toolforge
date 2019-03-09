@@ -8,7 +8,7 @@ ON cl.cl_from=pg.page_id
 INNER JOIN image img
 ON img.img_name=pg.page_title
 WHERE cl.cl_to='Wikipedia_orphaned_files'
-AND pg.page_namespace=6
 AND img.img_media_type='BITMAP'
-AND img.img_width<300
-AND img.img_height<300;
+AND img.img_width<250
+AND img.img_height<250
+LIMIT 1000;

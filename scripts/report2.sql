@@ -3,13 +3,9 @@
  * Author: Fastily
  */
 SELECT pg.page_title
-FROM categorylinks fc
-INNER JOIN (
-  SELECT cl.cl_from
-  FROM categorylinks cl
-  WHERE cl.cl_to='All_non-free_media' AND cl.cl_type='file'
-) nfc
-ON fc.cl_from=nfc.cl_from
+FROM categorylinks cl1
 INNER JOIN page pg
-ON fc.cl_from=pg.page_id
-WHERE fc.cl_to='All_free_media' AND fc.cl_type='file';
+ON cl1.cl_from=pg.page_id
+INNER JOIN categorylinks cl2
+ON cl2.cl_from=pg.page_id
+WHERE cl1.cl_to='All_non-free_media' AND cl2.cl_to='All_free_media' AND cl1.cl_type='file'
