@@ -95,8 +95,7 @@
 				generateRow(9, "orphaned free files on enwp", "Weekly");
 				generateRow(10, "orphaned, low-res free files on enwp", "Weekly");
 				generateRow(11, "enwp file pages shadowing commons files", "Weekly");
-				generateRow(12, "enwp files without Information/FUR templates", "Weekly");
-				generateRow(13, "free enwp files claimed as own work", "Weekly");
+				generateRow(12, "enwp files without an obvious/machine-readable source", "Weekly");
 				?>
 			</tbody>
 		</table>
