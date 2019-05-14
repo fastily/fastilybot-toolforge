@@ -11,4 +11,4 @@ WHERE cl.cl_to='Wikipedia_orphaned_files'
 AND img.img_media_type='BITMAP'
 AND img.img_width<250
 AND img.img_height<250
-LIMIT 1000;
+LIMIT 1250;
