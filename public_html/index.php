@@ -41,7 +41,7 @@
 
 	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<title>fastilybot @ toollabs</title>
+	<title>fastilybot @ toolforge</title>
 </head>
 <body>
 	<div class="main-wrapper">
@@ -68,9 +68,9 @@
 		</div>
 	</nav>
 	<div class="container">
-		<div class="jumbotron">
-			<h1 class="display-4">fastilybot @ toollabs</h1>
-			<p class="lead">(Raw DB Reports)</p>
+		<div class="jumbotron mt-3">
+			<h1 class="display-4">fastilybot @ toolforge</h1>
+			<p class="lead">[Raw DB Reports]</p>
 		</div>
 
 		<table class="table table-striped table-hover">
@@ -84,14 +84,14 @@
 			</thead>
 			<tbody>
 				<?php
-				generateRow(1, "enwp files with a duplicate on Commons", "Bi-Weekly"); 
-				generateRow(2, "enwp files tagged as free and non-free", "Bi-Weekly"); 
+				generateRow(1, "enwp files with a duplicate on Commons", "Tri-weekly"); 
+				generateRow(2, "enwp files tagged as free and non-free", "Weekly"); 
 				generateRow(3, "free files on enwp with no fileusage", "Weekly");
 				generateRow(4, "free files on enwp with links to the mainspace", "Weekly");
-				generateRow(5, "all non-free files on enwp", "Daily");
-				generateRow(6, "all free files on enwp", "Daily");
+				generateRow(5, "all non-free files on enwp", "Weekly");
+				generateRow(6, "all free files on enwp", "Weekly");
 				generateRow(7, "oversized non-free images on enwp", "Weekly");
-				generateRow(8, "all files on enwp", "Daily");
+				generateRow(8, "all files on enwp", "Weekly");
 				generateRow(9, "orphaned free files on enwp", "Weekly");
 				generateRow(10, "orphaned, low-res free files on enwp", "Weekly");
 				generateRow(11, "enwp file pages shadowing commons files", "Weekly");
