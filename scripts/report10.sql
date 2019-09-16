@@ -9,8 +9,8 @@ INNER JOIN image img
 ON img.img_name=pg.page_title
 WHERE cl.cl_to='Wikipedia_orphaned_files'
 AND img.img_media_type='BITMAP'
-AND img.img_width<250
-AND img.img_height<250
+AND img.img_width<285
+AND img.img_height<285
 AND pg.page_title NOT IN (
 	SELECT p.page_title FROM categorylinks c
 	INNER JOIN page p
