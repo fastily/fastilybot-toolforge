@@ -1,5 +1,5 @@
 /**
- * List files on Wikipedia and Commons that are not the same file.
+ * List files on Wikipedia and Commons that share a title but are not the same file.
  * Author: Fastily
  */
 SELECT wpimg.img_name

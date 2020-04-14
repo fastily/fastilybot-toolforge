@@ -39,16 +39,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<title>fastilybot @ toolforge</title>
 </head>
+
 <body>
-	<div class="main-wrapper">
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -84,27 +83,28 @@
 			</thead>
 			<tbody>
 				<?php
-				generateRow(1, "enwp files with a duplicate on Commons", "Tri-weekly"); 
-				generateRow(2, "enwp files tagged as free and non-free", "Weekly"); 
-				generateRow(3, "free files on enwp with no fileusage", "Weekly");
-				generateRow(4, "free files on enwp with links to the mainspace", "Weekly");
-				generateRow(5, "all non-free files on enwp", "Weekly");
-				generateRow(6, "all free files on enwp", "Weekly");
-				generateRow(7, "oversized non-free images on enwp", "Weekly");
-				generateRow(8, "all files on enwp", "Weekly");
-				generateRow(9, "orphaned free files on enwp", "Weekly");
-				generateRow(10, "orphaned, low-res free files on enwp", "Weekly");
-				generateRow(11, "enwp file pages shadowing commons files", "Weekly");
-				generateRow(12, "enwp files without an obvious/machine-readable source", "Weekly");
+					generateRow(1, "enwp files with a duplicate on Commons", "Tri-weekly"); 
+					generateRow(2, "enwp files tagged as free and non-free", "Weekly"); 
+					generateRow(3, "free files on enwp with no fileusage", "Weekly");
+					generateRow(4, "free files on enwp with links to the mainspace", "Weekly");
+					generateRow(5, "all non-free files on enwp", "Weekly");
+					generateRow(6, "all free files on enwp", "Weekly");
+					generateRow(7, "oversized non-free images on enwp", "Weekly");
+					generateRow(8, "all files on enwp", "Weekly");
+					generateRow(9, "orphaned free files on enwp", "Weekly");
+					generateRow(10, "orphaned, low-res free files on enwp", "Weekly");
+					generateRow(11, "enwp file pages shadowing commons files", "Weekly");
+					generateRow(12, "enwp files without an obvious/machine-readable source", "Weekly");
+					generateRow(13, "enwp files shadowing a Commons file", "Weekly");
 				?>
 			</tbody>
 		</table>
 	</div>
-</div>
 
-<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-crossorigin="anonymous"></script>
-<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.16.0/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
