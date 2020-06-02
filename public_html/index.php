@@ -39,7 +39,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<title>fastilybot @ toolforge</title>
 </head>
@@ -54,14 +54,11 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="https://meta.wikimedia.org/wiki/User:Fastily">Author</a>
+						<a target="_blank" class="nav-link" href="https://github.com/fastily/fastilybot-toollabs">Source</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://github.com/fastily/fastilybot-toollabs">Source</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://tools.wmflabs.org">Toolforge</a>
-					</li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://toolforge.org">Toolforge</a>
+                    </li>
 				</ul>
 			</div>
 		</div>
@@ -102,9 +99,9 @@
 	</div>
 
 
-	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.16.0/popper.min.js" crossorigin="anonymous"></script>
-	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.16.0/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
