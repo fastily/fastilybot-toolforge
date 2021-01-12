@@ -93,6 +93,9 @@
 					generateRow(11, "enwp file pages shadowing commons files", "Weekly");
 					generateRow(12, "enwp files without an obvious/machine-readable source", "Weekly");
 					generateRow(13, "enwp files shadowing a Commons file", "Weekly");
+					generateRow(14, "transcluded non-existent templates on enwp", "Weekly");
+					generateRow(15, "non-free pdfs on enwp", "Weekly");
+					generateRow(16, "orphaned file talk pages on enwp", "Weekly");
 				?>
 			</tbody>
 		</table>
