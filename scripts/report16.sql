@@ -2,7 +2,7 @@
  * Finds orphaned file talk pages on enwp
  * Author: Fastily
  */
-SELECT talkpage.page_namespace, talkpage.page_title
+SELECT talkpage.page_title
 FROM page talkpage
 WHERE talkpage.page_title NOT LIKE '%/%'
 AND talkpage.page_namespace = 7
