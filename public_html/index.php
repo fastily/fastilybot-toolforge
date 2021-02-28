@@ -96,6 +96,7 @@
 					generateRow(14, "transcluded non-existent templates on enwp", "Weekly");
 					generateRow(15, "non-free pdfs on enwp", "Weekly");
 					generateRow(16, "orphaned file talk pages on enwp", "Weekly");
+					generateRow(17, "all spi reports on enwp", "Weekly");
 				?>
 			</tbody>
 		</table>
