@@ -54,10 +54,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a target="_blank" class="nav-link" href="https://github.com/fastily/fastilybot-toollabs">Source</a>
+						<a class="nav-link" href="https://github.com/fastily/fastilybot-toollabs">Source</a>
 					</li>
                     <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="https://toolforge.org">Toolforge</a>
+                        <a class="nav-link" href="https://toolforge.org">Toolforge</a>
                     </li>
 				</ul>
 			</div>
