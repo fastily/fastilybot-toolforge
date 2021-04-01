@@ -97,6 +97,7 @@
 					generateRow(15, "non-free pdfs on enwp", "Weekly");
 					generateRow(16, "orphaned file talk pages on enwp", "Weekly");
 					generateRow(17, "all spi reports on enwp", "Weekly");
+					generateRow(18, "all files on commons", "Weekly");
 				?>
 			</tbody>
 		</table>
