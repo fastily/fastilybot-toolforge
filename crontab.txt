@@ -1,6 +1,28 @@
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
-15 6 * * 1,3,5 jsub -once -quiet -j y -o logs/triweekly.txt bash scripts/runReport.sh 1
+##############################
+##### WEEKLY RAW REPORTS #####
+##############################
 
-45 9 * * 1     jsub -once -quiet -j y -o logs/weekly.txt bash scripts/runReport.sh 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17
-15 14 * * *    jsub -once -quiet -j y -o logs/weekly.txt bash scripts/runReport.sh 14
+# 15 6 * * 1,3,5 jsub -once -quiet -j y -o logs/triweekly.txt bash run_report.sh 1
+
+##################
+##### WEEKLY #####
+##################
+15 3 * * 1 jsub -once -quiet -j y -o logs/weekly.txt bash run_report.sh weekly
+#15 3 * * 1 jsub -once -quiet -j y -o logs/one-off.txt bash run_report.sh enwiki scripts/raw3.sql scripts/raw4.sql scripts/raw5.sql
+
+######################
+##### TRI-WEEKLY #####
+######################
+15 6 * * 3,5 jsub -once -quiet -j y -o logs/tri_weekly.txt bash run_report.sh tri_weekly
+
+#################
+##### DAILY #####
+#################
+15 9 * * * jsub -once -quiet -j y -o logs/daily.txt bash run_report.sh daily
+
+
+# 15 6 * * 1     jsub -once -quiet -j y -o logs/weekly.txt bash run_report.sh 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17
+
+#15 14 * * *    jsub -once -quiet -j y -o logs/weekly.txt bash run_report.sh 14

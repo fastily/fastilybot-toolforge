@@ -22,6 +22,8 @@ mkdir -p "${rootScriptsDir}"
 cp -Rf "${publicHtmlDir}"/* "${rootPublicHtmlDir}"/
 cp -Rf "${scriptsDir}"/* "${rootScriptsDir}"/
 
+cp -f "process_raw_reports.py" "run_report.sh"  ~
+
 ## Generate logs folder if absent
 mkdir -p ~/logs
 
