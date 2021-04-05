@@ -9,4 +9,4 @@ INNER JOIN page p2
 ON t.tl_from  = p2.page_id
 WHERE p.page_title IS NULL AND t.tl_namespace = 10 AND p2.page_content_model="wikitext"
 GROUP BY 1
-LIMIT 50;
+LIMIT 100;
