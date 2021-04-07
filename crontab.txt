@@ -1,10 +1,10 @@
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
 # WEEKLY
-15 3 * * 1 jsub -once -quiet -mem 4g -j y -o logs/weekly.txt bash run_report.sh weekly
+15 8 * * 1 jsub -once -quiet -mem 8g -j y -o logs/weekly.txt bash run_report.sh weekly
 
 # TRI-WEEKLY
-15 6 * * 3,5 jsub -once -quiet -mem 4g -j y -o logs/tri_weekly.txt bash run_report.sh tri_weekly
+15 8 * * 3,5 jsub -once -quiet -mem 8g -j y -o logs/tri_weekly.txt bash run_report.sh tri_weekly
 
 # DAILY
-15 9 * * * jsub -once -quiet -j y -o logs/daily.txt bash run_report.sh daily
+15 12 * * * jsub -once -quiet -j y -o logs/daily.txt bash run_report.sh daily

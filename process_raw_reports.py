@@ -19,7 +19,7 @@ def _r_path(id: int, base: str = "raw") -> Path:
         base (str, optional): The prefix of the report. Defaults to "raw".
 
     Returns:
-        Path: The Path pointing to the report with the specified prefix and id.
+        Path: The `Path` pointing to the report with the specified prefix and id.
     """
     return REPORT_DIR / "{}{}.txt".format(base, id)
 
@@ -39,7 +39,6 @@ def _dump(id: int, out: Iterable[str]) -> None:
 
 def _main() -> None:
     """Main driver, to be run when this module is invoked directly."""
-
     cli_parser = argparse.ArgumentParser(description="CLI for processing raw reports")
     cli_parser.add_argument('report_ids', type=int, nargs='*', help='the report ids to process down from raw data')
     args = cli_parser.parse_args()
@@ -47,6 +46,12 @@ def _main() -> None:
     if not args.report_ids:
         cli_parser.print_help()
         return
+
+    # configure logging
+    handler = logging.StreamHandler()
+    handler.setFormatter(logging.Formatter("{asctime}: {levelname}: {message}", "%Y-%m-%d %H:%M:%S", "{"))
+    log.addHandler(handler)
+    log.setLevel("DEBUG")
 
     for id in args.report_ids:
 
@@ -86,5 +91,4 @@ def _main() -> None:
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG)
     _main()

@@ -1,5 +1,4 @@
 <?php
-
 	date_default_timezone_set("UTC");
 	
     /**
@@ -39,7 +38,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<title>fastilybot @ toolforge</title>
 </head>
@@ -97,16 +96,14 @@
 					generateRow(15, "non-free pdfs on enwp", "Weekly");
 					generateRow(16, "orphaned file talk pages on enwp", "Weekly");
 					generateRow(17, "all spi reports on enwp", "Weekly");
-					// generateRow(18, "all files on commons", "Weekly");
 				?>
 			</tbody>
 		</table>
 	</div>
 
-
     <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.16.0/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.16.1/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
