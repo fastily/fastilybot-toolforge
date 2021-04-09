@@ -86,9 +86,3 @@ case "$1" in
 		usage
 		;;
 esac
-
-
-# -q - quick, don't buffer output
-# -r - raw, don't escape things like backslashes
-# -B - use tabs as column separators in output
-# -h - hostname to use
