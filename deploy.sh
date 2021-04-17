@@ -27,8 +27,4 @@ cp -f "process_raw_reports.py" "run_report.sh"  ~
 ## Generate logs folder if absent
 mkdir -p ~/logs
 
-## Load crontab
-printf "Loading crontab...\n"
-crontab "crontab.txt"
-
 printf "Done!\n"
