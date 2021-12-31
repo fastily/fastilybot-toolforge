@@ -1,9 +1,10 @@
 #!/bin/bash
 
-#: Deploys scripts, public_html, tool description, and crontab to web server.
+#: Deploys scripts, public_html, tool description, and crontab.
 #:
 #: PRECONDITION:
-#: 		1) Web server has been started.
+#: 		1) webservice has been started.
+#:
 #: Author: Fastily
 
 publicHtmlDir="public_html"
@@ -16,16 +17,12 @@ printf "Doing deploy...\n"
 
 ## Copy public_html and scripts
 printf "Copying public_html and scripts...\n"
-mkdir -p "${rootPublicHtmlDir}/r"
-mkdir -p "${rootScriptsDir}"
+mkdir -p "${rootPublicHtmlDir}/r" "$rootScriptsDir" ~/logs
 
-cp -Rf "${publicHtmlDir}"/* "${rootPublicHtmlDir}"/
-cp -Rf "${scriptsDir}"/* "${rootScriptsDir}"/
+cp -Rf "${publicHtmlDir}"/* "${rootPublicHtmlDir}/"
+cp -Rf "${scriptsDir}"/* "${rootScriptsDir}/"
 
 cp -f "process_raw_reports.py" "run_report.sh"  ~
-
-## Generate logs folder if absent
-mkdir -p ~/logs
 
 ## Load crontab
 printf "Loading crontab...\n"

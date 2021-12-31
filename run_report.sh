@@ -31,8 +31,7 @@ usage() {
 do_query() {
 	for s in ${@:2}; do
 		printf -v report_file "%s/%s.txt" "$REPORT_DIR" "$s"
-		mysql --defaults-file=~/"replica.my.cnf" -q -r -B -h "${1}.analytics.db.svc.wikimedia.cloud" "${1}_p" <  "${SCRIPT_DIR}/${s}.sql" > "$report_file"
-		sed -i -e "1,3d" "$report_file" # First two lines are junk
+		mysql --defaults-file=~/"replica.my.cnf" -q -r -B -N -h "${1}.analytics.db.svc.wikimedia.cloud" "${1}_p" <  "${SCRIPT_DIR}/${s}.sql" > "$report_file"
 	done
 }
 
@@ -67,8 +66,8 @@ fi
 case "$1" in
 	weekly)
 		do_query $COMMONSWIKI raw1
-		do_query $ENWIKI raw3 raw4
-		do_query $ENWIKI report2 report3 report4 report5 report6 report7 report8 report9 report10 report12 report15 report17 report18 report19
+		do_query $ENWIKI raw{3,4}
+		do_query $ENWIKI report{2..10} report{12,15} report{17..21}
 
 		generate_tri_weekly
 

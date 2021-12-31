@@ -93,6 +93,8 @@
                     generateRow(17, "all spi reports on enwp", "Weekly");
                     generateRow(18, "free enwp files which link to flickr", "Weekly");
                     generateRow(19, "orphaned Timed Text on enwp", "Weekly");
+                    generateRow(20, "unusually large IP talk pages on enwp", "Weekly");
+                    generateRow(21, "unusually large user talk pages on enwp", "Weekly");
                 ?>
             </tbody>
         </table>
