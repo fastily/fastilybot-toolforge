@@ -10,8 +10,8 @@
 ENWIKI="enwiki"
 COMMONSWIKI="commonswiki"
 
-REPORT_DIR=~/"public_html/r"
-SCRIPT_DIR=~/"scripts"
+REPORT_DIR=~/public_html/r
+SCRIPT_DIR=~/scripts
 
 ##
 # Print usage information and exit
@@ -30,8 +30,7 @@ usage() {
 ##
 do_query() {
 	for s in ${@:2}; do
-		printf -v report_file "%s/%s.txt" "$REPORT_DIR" "$s"
-		mysql --defaults-file=~/"replica.my.cnf" -q -r -B -N -h "${1}.analytics.db.svc.wikimedia.cloud" "${1}_p" <  "${SCRIPT_DIR}/${s}.sql" > "$report_file"
+		mysql --defaults-file=~/replica.my.cnf -q -r -B -N -h "${1}.analytics.db.svc.wikimedia.cloud" "${1}_p" <  "${SCRIPT_DIR}/${s}.sql" > "${REPORT_DIR}/${s}.txt"
 	done
 }
 
