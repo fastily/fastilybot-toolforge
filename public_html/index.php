@@ -95,6 +95,9 @@
                     generateRow(19, "orphaned Timed Text on enwp", "Weekly");
                     generateRow(20, "unusually large IP talk pages on enwp", "Weekly");
                     generateRow(21, "unusually large user talk pages on enwp", "Weekly");
+                    generateRow(22, "enwp filenames containing multiple extensions", "Weekly");
+                    generateRow(23, "enwp files credited to Getty Images", "Weekly");
+                    generateRow(24, "enwp files credited to The Associated Press", "Weekly");
                 ?>
             </tbody>
         </table>

@@ -66,7 +66,7 @@ case "$1" in
 	weekly)
 		do_query $COMMONSWIKI raw1
 		do_query $ENWIKI raw{3,4}
-		do_query $ENWIKI report{2..10} report{12,15} report{17..21}
+		do_query $ENWIKI report{2..10} report{12,15} report{17..24}
 
 		generate_tri_weekly
 
