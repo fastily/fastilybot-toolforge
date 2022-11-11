@@ -98,6 +98,7 @@
                     generateRow(22, "enwp filenames containing multiple extensions", "Weekly");
                     generateRow(23, "enwp files credited to Getty Images", "Weekly");
                     generateRow(24, "enwp files credited to The Associated Press", "Weekly");
+                    generateRow(25, "enwp unfiled RfAs", "Weekly")
                 ?>
             </tbody>
         </table>
