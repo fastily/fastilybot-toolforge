@@ -30,7 +30,7 @@ usage() {
 ##
 do_query() {
 	for s in ${@:2}; do
-		mysql --defaults-file=~/replica.my.cnf -q -r -B -N -h "${1}.analytics.db.svc.wikimedia.cloud" "${1}_p" <  "${SCRIPT_DIR}/${s}.sql" > "${REPORT_DIR}/${s}.txt"
+		mysql --defaults-file=~/replica.my.cnf -q -r -B -N -h "${1}.analytics.db.svc.wikimedia.cloud" "${1}_p" < "${SCRIPT_DIR}/${s}.sql" > "${REPORT_DIR}/${s}.txt"
 	done
 }
 
