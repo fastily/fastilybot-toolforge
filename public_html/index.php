@@ -99,6 +99,7 @@
                     generateRow(23, "enwp files credited to Getty Images", "Weekly");
                     generateRow(24, "enwp files credited to The Associated Press", "Weekly");
                     generateRow(25, "enwp unfiled RfAs", "Weekly")
+                    generateRow(26, "enwp fully protected User talk", "Weekly")
                 ?>
             </tbody>
         </table>
