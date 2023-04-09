@@ -13,10 +13,10 @@ scriptsDir="scripts"
 rootPublicHtmlDir=~/"${publicHtmlDir}"
 rootScriptsDir=~/"${scriptsDir}"
 
-printf "Doing deploy...\n"
+echo "Doing deploy..."
 
 ## Copy public_html and scripts
-printf "Copying public_html and scripts...\n"
+echo "Copying public_html and scripts..."
 mkdir -p "${rootPublicHtmlDir}/r" "$rootScriptsDir" ~/logs
 
 cp -Rf "${publicHtmlDir}"/* "${rootPublicHtmlDir}/"
@@ -24,8 +24,8 @@ cp -Rf "${scriptsDir}"/* "${rootScriptsDir}/"
 
 cp -f "process_raw_reports.py" "run_report.sh"  ~
 
-## Load crontab
-printf "Loading crontab...\n"
-crontab "crontab.txt"
+## Load jobs
+echo "Loading jobs..."
+toolforge-jobs load jobs.yaml
 
-printf "Done!\n"
+echo "Done!"
