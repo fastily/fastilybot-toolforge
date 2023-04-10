@@ -1,22 +1,25 @@
 ---
 - name: fastily-reports-weekly
-  command: bash run_report.sh.sh weekly
+  command: bash run_report.sh weekly
   filelog-stdout: logs/weekly.txt
   filelog-stderr: logs/weekly.txt
-  mem: 8g
+  mem: 4Gi
   cpu: 1
   image: python3.9
   schedule: "15 8 * * 1"
 - name: fastily-reports-tri-weekly
-  command: bash run_report.sh.sh tri_weekly
+  command: bash run_report.sh tri_weekly
   filelog-stdout: logs/tri_weekly.txt
   filelog-stderr: logs/tri_weekly.txt
-  mem: 8g
+  mem: 4Gi
   cpu: 1
+  image: bullseye
   schedule: "15 8 * * 3,5"
 - name: fastily-reports-daily
-  command: bash run_report.sh.sh daily
+  command: bash run_report.sh daily
   filelog-stdout: logs/daily.txt
   filelog-stderr: logs/daily.txt
-  mem: 1g
+  mem: 1Gi
+  cpu: 1
+  image: bullseye
   schedule: "15 12 * * *"
