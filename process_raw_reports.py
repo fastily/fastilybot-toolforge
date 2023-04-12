@@ -21,7 +21,8 @@ def _r_path(id: int, base: str = "raw") -> Path:
     Returns:
         Path: The `Path` pointing to the report with the specified prefix and id.
     """
-    return REPORT_DIR / f"{base}{id}.txt"
+    # return REPORT_DIR / f"{base}{id}.txt"
+    return REPORT_DIR / "{}{}.txt".format(base, id)
 
 
 def _dump(id: int, out: Iterable[str]) -> None:
@@ -83,7 +84,9 @@ def _main() -> None:
             log.info("now processing the big file (raw1) for report16")
             with _r_path(1).open() as f:
                 for s in f:
-                    if (s := s.strip()) in l:
+                    s = s.strip()
+                    if s in l:
+                    # if (s := s.strip()) in l:
                         l.remove(s)
 
             _dump(id, l)

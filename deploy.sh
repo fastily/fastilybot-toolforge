@@ -24,8 +24,12 @@ cp -Rf "${scriptsDir}"/* "${rootScriptsDir}/"
 
 cp -f "process_raw_reports.py" "run_report.sh"  ~
 
-## Load jobs
-echo "Loading jobs..."
-toolforge-jobs load jobs.yaml
+# ## Load jobs
+# echo "Loading jobs..."
+# toolforge-jobs load jobs.yaml
+
+## Load crontab
+echo "Loading crontab..."
+crontab "crontab.txt"
 
 echo "Done!"
