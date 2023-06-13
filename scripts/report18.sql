@@ -8,4 +8,4 @@ INNER JOIN externallinks el
 ON el_from = p.page_id
 INNER JOIN categorylinks cl
 ON p.page_id = cl.cl_from
-WHERE p.page_namespace = 6 AND cl.cl_to = 'All_free_media' AND el.el_to LIKE '%flickr%';
+WHERE p.page_namespace = 6 AND cl.cl_to = 'All_free_media' AND el.el_to_domain_index LIKE '%flickr%';
