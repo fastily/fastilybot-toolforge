@@ -3,7 +3,7 @@
 #: Database report runner
 #:
 #: Arguments:
-#:		1) The type of reports to run (e.g. daily, tri_weekly, weekly)
+#:		1) The type of reports to run (e.g. daily, tri_weekly, weekly, weekly_python)
 #:
 #: Author: Fastily
 
@@ -72,8 +72,7 @@ case "$1" in
         generate_tri_weekly
         ;;
     weekly_python)
-        echo 'hi'
-        # python3 process_raw_reports.py 13 16
+        python3 process_raw_reports.py 13 16
         ;;
     tri_weekly)
         generate_tri_weekly

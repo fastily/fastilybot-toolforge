@@ -1,8 +1,8 @@
 """Methods for processing raw database reports"""
 
-import argparse
 import logging
 
+from argparse import ArgumentParser
 from pathlib import Path
 from typing import Iterable
 
@@ -39,7 +39,7 @@ def _dump(id: int, out: Iterable[str]) -> None:
 
 def _main() -> None:
     """Main driver, to be run when this module is invoked directly."""
-    cli_parser = argparse.ArgumentParser(description="CLI for processing raw reports")
+    cli_parser = ArgumentParser(description="CLI for processing raw reports")
     cli_parser.add_argument('report_ids', type=int, nargs='*', help='the report ids to process down from raw data')
     args = cli_parser.parse_args()
 
