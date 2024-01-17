@@ -100,6 +100,9 @@
                     generateRow(24, "enwp files credited to The Associated Press", "Weekly");
                     generateRow(25, "enwp unfiled RfAs", "Weekly");
                     generateRow(26, "enwp fully protected User talk", "Weekly");
+                    generateRow(27, "largest orphaned free files on enwp by bytes", "Weekly");
+                    generateRow(28, "smallest orphaned free files on enwp by bytes", "Weekly");
+                    generateRow(29, "small orphaned free enwp bitmap files by resolution", "Weekly");
                 ?>
             </tbody>
         </table>
