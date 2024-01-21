@@ -9,5 +9,5 @@ ON p.page_title = ii.img_name
 INNER JOIN categorylinks cl
 ON cl.cl_from=p.page_id
 WHERE cl.cl_to='Wikipedia_orphaned_files'
-ORDER BY ii.img_size DESC
+ORDER BY ii.img_size
 LIMIT 200;
